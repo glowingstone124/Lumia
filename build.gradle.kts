@@ -10,6 +10,9 @@ repositories {
     mavenCentral()
 }
 
+application {
+    mainClass.set("ind.glowingstone.lumia.MainKt")
+}
 dependencies {
     testImplementation(kotlin("test"))
     implementation("io.ktor:ktor-server-core-jvm:2.3.4")

@@ -1,3 +1,4 @@
+package ind.glowingstone.lumia
 import io.ktor.http.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
@@ -18,7 +19,7 @@ import java.io.File
 import java.util.*
 
 fun main() {
-    val workDir = File("images")
+    val workDir = File("/opt/server")
     if (!workDir.exists()) {
         workDir.mkdir()
     }
