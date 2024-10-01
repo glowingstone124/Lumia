@@ -52,6 +52,10 @@ fun main() {
                 val files = workDir.listFiles()?.map { it.name } ?: emptyList()
                 call.respond(files)
             }
+
+            get("/") {
+                call.respondText("\"Lumia\" Project for simple static file hosting.\"/download/{filename}\" to download a file. ", status = HttpStatusCode.OK)
+            }
         }
     }.start(wait = true)
 }
